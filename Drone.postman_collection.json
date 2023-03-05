@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "98e588d0-9aff-45f1-bc05-56e984c7b251",
+		"name": "Drone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8089/drone/register-drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n    \"serialNumber\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\r\n    \"model\":\"Cruiserweight\",\r\n    \"weightLimit\" : 500,\r\n    \"batteryCapacity\" : 29,\r\n    \"state\":\"IDLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/drone/register-drone",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"drone",
+						"register-drone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/drone/load-drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"medications\":[{\"name\":\"x3-_cw\",\"code\":\"W\",\"weight\":100}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/drone/load-drone",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"drone",
+						"load-drone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/drone/get-drone-medications",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/drone/get-drone-medications",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"drone",
+						"get-drone-medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/drone/get-drone-battery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/drone/get-drone-battery",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"drone",
+						"get-drone-battery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8089/drone/get-available-drones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8089/drone/get-available-drones",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"drone",
+						"get-available-drones"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
